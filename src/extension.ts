@@ -21,7 +21,7 @@ export async function activate(context: vscode.ExtensionContext) {
   // Now provide the implementation of the command with registerCommand
   // The commandId parameter must match the command field in package.json
   const registeredCommandGoto = vscode.commands.registerCommand(
-    "relativity.goto",
+    "vsc_line_go",
     async () => {
       // Get the current editor
       const editor: vscode.TextEditor | undefined =

@@ -42,7 +42,7 @@
   ],
   "activationEvents": [
     "*",
-    "onCommand:relativity.goto",
+    "onCommand:vsc_line_go",
     "onCommand:relativity.select"
   ],
   "main": "./out/extension.js",
