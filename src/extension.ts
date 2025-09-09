@@ -74,35 +74,35 @@ export async function activate(context: vscode.ExtensionContext) {
     }
   );
 
-  const registeredCommandSelect = vscode.commands.registerCommand(
-    "relativity.select",
-    async () => {
-      // Get the current editor
-      const editor: vscode.TextEditor | undefined =
-        vscode.window.activeTextEditor;
+  // const registeredCommandSelect = vscode.commands.registerCommand(
+  //   "relativity.select",
+  //   async () => {
+  //     // Get the current editor
+  //     const editor: vscode.TextEditor | undefined =
+  //       vscode.window.activeTextEditor;
 
-      // If the current editor is undefined (meaning user focus not on a editor), just ignore the command
-      if (!editor) return;
+  //     // If the current editor is undefined (meaning user focus not on a editor), just ignore the command
+  //     if (!editor) return;
 
-      // Get input from user
-      const input: string | undefined = await vscode.window.showInputBox({
-        value: "0",
-        prompt: "Select using relative number of lines",
-        validateInput: newPeekline(editor),
-      });
-      // Delete highlight generated in preview function
-      deleteHighlight(editor);
+  //     // Get input from user
+  //     const input: string | undefined = await vscode.window.showInputBox({
+  //       value: "0",
+  //       prompt: "Select using relative number of lines",
+  //       validateInput: newPeekline(editor),
+  //     });
+  //     // Delete highlight generated in preview function
+  //     deleteHighlight(editor);
 
-      // End if input box closed after losing focus or if user pressed esc or if user pressed enter with no input
-      if (input === undefined || input === "") {
-        // Replace visible range/viewPort with how it was before the preview
-        editor.revealRange(
-          new vscode.Range(editor.selection.active, editor.selection.active),
-          vscode.TextEditorRevealType.InCenterIfOutsideViewport
-        );
+  //     // End if input box closed after losing focus or if user pressed esc or if user pressed enter with no input
+  //     if (input === undefined || input === "") {
+  //       // Replace visible range/viewPort with how it was before the preview
+  //       editor.revealRange(
+  //         new vscode.Range(editor.selection.active, editor.selection.active),
+  //         vscode.TextEditorRevealType.InCenterIfOutsideViewport
+  //       );
 
-        return;
-      }
+  //       return;
+  //     }
 
       // Get lines to jump and characters to jump from input
       const { linesToJump, charactersToJump } = parseInput(input);
@@ -130,7 +130,7 @@ export async function activate(context: vscode.ExtensionContext) {
   );
 
   context.subscriptions.push(registeredCommandGoto);
-  context.subscriptions.push(registeredCommandSelect);
+  // context.subscriptions.push(registeredCommandSelect);
 }
 
 // this method is called when your extension is deactivated
