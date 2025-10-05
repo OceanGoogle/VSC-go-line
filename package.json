@@ -54,7 +54,7 @@
     "keybindings": [
       {
         "command": "ctrl_g_go",
-        "key": "alt+ctrl+g"
+        "key": "ctrl+g"
       }
     ]
   },
