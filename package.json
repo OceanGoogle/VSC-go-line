@@ -1,6 +1,6 @@
 {
   "name": "ctrl-g-jump",
-  "displayName": "Ctrol G jump",
+  "displayName": "Ctrol G jump line",
   "description": "go Up/Down number of lines , also be able to go absolute line numbers",
   "version": "1.0.0",
   "repository": {
@@ -34,10 +34,8 @@
     "Other"
   ],
   "keywords": [
-    "relative",
     "goto",
     "lines",
-    "jump",
     "ctrl+g"
   ],
   "activationEvents": [
@@ -48,7 +46,7 @@
     "commands": [
       {
         "command": "ctrl_g_go",
-        "title": "Goto relative line"
+        "title": "replacement of ctrl+g go to line"
       }
     ],
     "keybindings": [
