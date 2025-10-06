@@ -16,5 +16,5 @@ usages:
         ex:   5d # down 5 lines
         ex:   6j # down 6 lines
 ```    
-all commmands dont need pushing <enter>
+all commmands dont need pushing "enter"
    
