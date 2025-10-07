@@ -8,13 +8,13 @@ method:
 ```
 usages:
 ```    
-    go up :  line amounts + u(-,k)
+    go up : line amounts + u(-,k...)
         ex:   20u # up 20 lines
-              5-  # up 5  lines
+        ex:   5-  # up 5  lines
 
-    go down:line amounts + d(+,j)                  
-        ex:   5d # down 5 lines
-        ex:   6j # down 6 lines
+   go down: line amounts + d(+,j...)                  
+        ex:   5d # dn 5 lines
+        ex:   6j # dn 6 lines
 ```    
 all commmands dont need pushing "enter"
    
