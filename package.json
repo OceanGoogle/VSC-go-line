@@ -2,7 +2,7 @@
   "name": "ctrl-g-jump",
   "displayName": "Ctrol G jump line",
   "description": "go Up/Down number of lines , also be able to go absolute line numbers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/OceanGoogle/VSC-go-line.git"
